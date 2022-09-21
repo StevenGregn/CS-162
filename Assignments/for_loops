@@ -1,0 +1,47 @@
+// medium
+int p = 0;
+for (i = 0; i < 4; i++)
+{
+    (rand() % 5) + 3;
+    p = (rand() % 5) + 3;
+    dealer_card_nums[i] = p;
+    cout << "The dealer got the card " << dealer_card_nums[i] << endl;
+    dealer_total_card_count[1] += dealer_card_nums[i];
+    if (dealer_total_card_count[1] >= 16 && dealer_total_card_count[1] <= 20)
+    {
+
+        break;
+
+    }
+    if (dealer_total_card_count[1] > 21)
+    {
+
+        break;
+
+    }
+
+}
+// hard
+int p = 10;
+for (i = 0; i < 11; i++)
+{
+
+    (rand() % 2) + 1;
+    p = (rand() % 2) + 2;
+    dealer_card_nums[i] = p;
+    cout << "The dealer got the card " << dealer_card_nums[i] << endl;
+    dealer_total_card_count[1] += dealer_card_nums[i];
+    if (dealer_total_card_count[1] >= 19 && dealer_total_card_count[1] <= 21)
+    {
+
+        break;
+
+    }
+    if (dealer_total_card_count[1] > 21)
+    {
+
+        break;
+
+    }
+
+}
